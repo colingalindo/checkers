@@ -1,0 +1,49 @@
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\obj\Debug\MainWindow.baml
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\obj\Debug\MainWindow.g.cs
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\obj\Debug\App.g.cs
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\obj\Debug\Checkers_MarkupCompile.cache
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\obj\Debug\Checkers.g.resources
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\obj\Debug\CheckersBoard.csproj.GenerateResource.Cache
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\bin\Debug\Checkers.exe.config
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\bin\Debug\Checkers.exe
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\bin\Debug\Checkers.pdb
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\obj\Debug\CheckersBoard.Properties.Resources.resources
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\obj\Debug\Checkers.exe
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\obj\Debug\Checkers.pdb
+C:\Users\Colin\Documents\Visual Studio 2013\Projects\Checkers\Checkers\obj\Debug\CheckersBoard.csprojResolveAssemblyReference.cache
+G:\School\CS4346\Checkers\Checkers\bin\Debug\Checkers.exe.config
+G:\School\CS4346\Checkers\Checkers\obj\Debug\Checkers.exe
+G:\School\CS4346\Checkers\Checkers\obj\Debug\Checkers.pdb
+G:\School\CS4346\Checkers\Checkers\bin\Debug\Checkers.exe
+G:\School\CS4346\Checkers\Checkers\bin\Debug\Checkers.pdb
+G:\School\CS4346\Checkers\Checkers\obj\Debug\CheckersBoard.csprojResolveAssemblyReference.cache
+G:\School\CS4346\Checkers\Checkers\obj\Debug\MainWindow.baml
+G:\School\CS4346\Checkers\Checkers\obj\Debug\MainWindow.g.cs
+G:\School\CS4346\Checkers\Checkers\obj\Debug\App.g.cs
+G:\School\CS4346\Checkers\Checkers\obj\Debug\Checkers_MarkupCompile.cache
+G:\School\CS4346\Checkers\Checkers\obj\Debug\Checkers.g.resources
+G:\School\CS4346\Checkers\Checkers\obj\Debug\CheckersBoard.Properties.Resources.resources
+G:\School\CS4346\Checkers\Checkers\obj\Debug\CheckersBoard.csproj.GenerateResource.Cache
+F:\School\CS4346\Checkers\Checkers\bin\Debug\Checkers.exe.config
+F:\School\CS4346\Checkers\Checkers\obj\Debug\Checkers.exe
+F:\School\CS4346\Checkers\Checkers\obj\Debug\Checkers.pdb
+F:\School\CS4346\Checkers\Checkers\obj\Debug\MainWindow.baml
+F:\School\CS4346\Checkers\Checkers\obj\Debug\MainWindow.g.cs
+F:\School\CS4346\Checkers\Checkers\obj\Debug\App.g.cs
+F:\School\CS4346\Checkers\Checkers\obj\Debug\Checkers_MarkupCompile.cache
+F:\School\CS4346\Checkers\Checkers\obj\Debug\Checkers.g.resources
+F:\School\CS4346\Checkers\Checkers\obj\Debug\CheckersBoard.Properties.Resources.resources
+F:\School\CS4346\Checkers\Checkers\bin\Debug\Checkers.exe
+F:\School\CS4346\Checkers\Checkers\bin\Debug\Checkers.pdb
+F:\School\CS4346\Checkers\Checkers\bin\Debug\Resources\black60p.png
+F:\School\CS4346\Checkers\Checkers\bin\Debug\Resources\red60p.png
+F:\School\CS4346\Checkers\Checkers\obj\Debug\Checkers_Content.g.cs
+G:\School\CS4346\Checkers\Checkers\bin\Debug\Resources\black60p.png
+G:\School\CS4346\Checkers\Checkers\bin\Debug\Resources\red60p_king.png
+G:\School\CS4346\Checkers\Checkers\bin\Debug\Resources\black60p_king.png
+G:\School\CS4346\Checkers\Checkers\bin\Debug\Resources\red60p.png
+G:\School\CS4346\Checkers\Checkers\obj\Debug\Checkers_Content.g.cs
+F:\School\CS4346\Checkers\Checkers\bin\Debug\Resources\red60p_king.png
+F:\School\CS4346\Checkers\Checkers\bin\Debug\Resources\black60p_king.png
+F:\School\CS4346\Checkers\Checkers\obj\Debug\CheckersBoard.csprojResolveAssemblyReference.cache
+F:\School\CS4346\Checkers\Checkers\obj\Debug\CheckersBoard.csproj.GenerateResource.Cache
