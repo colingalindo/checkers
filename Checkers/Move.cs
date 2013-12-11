@@ -83,5 +83,19 @@ namespace CheckersBoard
             return null;
         }
 
+        public override bool Equals(System.Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            Move move = obj as Move;
+            if ((System.Object)move == null)
+            {
+                return false;
+            }
+
+            return piece1.Equals(move.piece1) && piece2.Equals(move.piece2);
+        }
     }
 }

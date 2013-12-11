@@ -20,6 +20,11 @@ namespace CheckersBoard
         {
             List<Piece> currentPieces = new List<Piece>();
             List<Move> avaliableMoves = new List<Move>();
+            List<Move> jumpMoves = currentBoard.checkJumps("Red");
+            if (jumpMoves.Count > 0)
+            {
+                return jumpMoves;
+            }
             for (int r = 0; r < 8; r++)
             {
                 for (int c = 0; c < 8; c++)

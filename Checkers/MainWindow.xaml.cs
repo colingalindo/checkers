@@ -243,6 +243,27 @@ namespace CheckersBoard
 
         private bool CheckMoveRed(Button button1, Button button2)
         {
+            CheckerBoard currentBoard = GetCurrentBoard();
+            List<Move> jumpMoves = currentBoard.checkJumps("Red");
+
+            if (jumpMoves.Count > 0)
+            {
+                bool invalid = true;
+                foreach (Move move in jumpMoves)
+                {
+                    if (currentMove.Equals(move))
+                        invalid = false;
+                }
+                if (invalid)
+                {
+                    displayError("Jump must be taken");
+                    currentMove.piece1 = null;
+                    currentMove.piece2 = null;
+                    Console.WriteLine("False");
+                    return false;
+                }
+            }
+
             if (button1.Name.Contains("Red"))
             {
                 if (button1.Name.Contains("King"))
@@ -287,6 +308,27 @@ namespace CheckersBoard
 
         private bool CheckMoveBlack(Button button1, Button button2)
         {
+            CheckerBoard currentBoard = GetCurrentBoard();
+            List<Move> jumpMoves = currentBoard.checkJumps("Black");
+
+            if (jumpMoves.Count > 0)
+            {
+                bool invalid = true;
+                foreach (Move move in jumpMoves)
+                {
+                    if (currentMove.Equals(move))
+                        invalid = false;
+                }
+                if (invalid)
+                {
+                    displayError("Jump must be taken");
+                    currentMove.piece1 = null;
+                    currentMove.piece2 = null;
+                    Console.WriteLine("False");
+                    return false;
+                }
+            }
+
             if (button1.Name.Contains("Black"))
             {
                 if (button1.Name.Contains("King"))
@@ -346,7 +388,6 @@ namespace CheckersBoard
                 Grid.SetColumn(stackPanel2, currentMove.piece1.Column);
                 CheckersGrid.Children.Add(stackPanel2);
                 checkKing(currentMove.piece2);
-                checkWin();
                 currentMove = null;
                 if (turn == "Black")
                 {
@@ -354,6 +395,7 @@ namespace CheckersBoard
                 }
                 else if (turn == "Red")
                     turn = "Black";
+                checkWin();
             }
         }
 
@@ -504,6 +546,11 @@ namespace CheckersBoard
             turn = "Black";
             ClearBoard();
             MakeBoard();
+        }
+
+        private void displayError(string error)
+        {
+            MessageBox.Show(error, "Invalid Move", MessageBoxButton.OK);
         }
 
         private void newGame_Click(object sender, RoutedEventArgs e)
