@@ -30,6 +30,7 @@ namespace CheckersBoard
         public MainWindow()
         {
             InitializeComponent();
+            this.Title = "Checkers! Blacks turn!";
             currentMove = null;
             winner = null;
             turn = "Black";
@@ -190,9 +191,15 @@ namespace CheckersBoard
             if (currentMove == null)
                 currentMove = new Move();
             if (currentMove.piece1 == null)
+            {
                 currentMove.piece1 = new Piece(row, col);
+                stackPanel.Background = Brushes.Green;
+            }
             else
+            {
                 currentMove.piece2 = new Piece(row, col);
+                stackPanel.Background = Brushes.Green;
+            }
             if ((currentMove.piece1 != null) && (currentMove.piece2 != null))
             {
                 if (CheckMove())
@@ -209,19 +216,27 @@ namespace CheckersBoard
             StackPanel stackPanel2 = (StackPanel)GetGridElement(CheckersGrid, currentMove.piece2.Row, currentMove.piece2.Column);
             Button button1 = (Button) stackPanel1.Children[0];
             Button button2 = (Button) stackPanel2.Children[0];
+            stackPanel1.Background = Brushes.Black;
+            stackPanel2.Background = Brushes.Black;
 
             if ((turn == "Black") && (button1.Name.Contains("Red")))
             {
                 currentMove.piece1 = null;
                 currentMove.piece2 = null;
-                Console.WriteLine("False");
+                displayError("It is blacks turn.");
                 return false;
             }
             if ((turn == "Red") && (button1.Name.Contains("Black")))
             {
                 currentMove.piece1 = null;
                 currentMove.piece2 = null;
-                Console.WriteLine("False");
+                displayError("It is reds turn.");
+                return false;
+            }
+            if (button1.Equals(button2))
+            {
+                currentMove.piece1 = null;
+                currentMove.piece2 = null;
                 return false;
             }
             if(button1.Name.Contains("Black"))
@@ -302,7 +317,7 @@ namespace CheckersBoard
                 }
             }
             currentMove = null;
-            Console.WriteLine("False");
+            displayError("Invalid Move. Try Again.");
             return false;
         }
 
@@ -367,7 +382,7 @@ namespace CheckersBoard
                 }
             }
             currentMove = null;
-            Console.WriteLine("False");
+            displayError("Invalid Move. Try Again.");
             return false;
        }
 
@@ -391,10 +406,14 @@ namespace CheckersBoard
                 currentMove = null;
                 if (turn == "Black")
                 {
+                    this.Title = "Checkers! Reds turn!";
                     turn = "Red";
                 }
                 else if (turn == "Red")
+                {
+                    this.Title = "Checkers! Blacks turn!";
                     turn = "Black";
+                }
                 checkWin();
             }
         }
@@ -543,6 +562,7 @@ namespace CheckersBoard
         {
             currentMove = null;
             winner = null;
+            this.Title = "Checkers! Blacks turn!";
             turn = "Black";
             ClearBoard();
             MakeBoard();
